@@ -1,15 +1,14 @@
 name 'ondrej_php'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
-description 'Installs/Configures ondrej_php'
-long_description 'Installs/Configures ondrej_php'
+maintainer 'brutuscat'
+maintainer_email 'brutuscat@gmail.com'
+license 'Apache 2.0'
+description 'Installs and maintains the Ondřej Surý Co-installable PHP versions and php modules'
+
+source_url 'https://github.com/brutuscat/ondrej_php'
+issues_url 'https://github.com/brutuscat/ondrej_php/issues'
+chef_version '>= 12.1'
 version '0.1.0'
 
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Issues` link
-# issues_url 'https://github.com/<insert_org_here>/ondrej_php/issues' if respond_to?(:issues_url)
+supports 'ubuntu', '>= 14.04'
 
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Source` link
-# source_url 'https://github.com/<insert_org_here>/ondrej_php' if respond_to?(:source_url)
+depends 'php'
